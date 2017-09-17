@@ -62,7 +62,7 @@ class HangpersonGame
     require 'net/http'
     uri = URI('http://watchout4snakes.com/wo4snakes/Random/RandomWord')
     Net::HTTP.new('watchout4snakes.com').start { |http|
-      return http.post(uri, "").body
+      http.post(uri, "").body
     }
     rescue 
       raise 'couldnt get random word'
