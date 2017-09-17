@@ -1,3 +1,4 @@
+require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/flash'
 require './lib/hangperson_game.rb'
