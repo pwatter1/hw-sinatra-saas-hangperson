@@ -64,6 +64,9 @@ class HangpersonGame
     Net::HTTP.new('watchout4snakes.com').start { |http|
       return http.post(uri, "").body
     }
+    rescue 
+      raise 'couldnt get random word'
+    end
   end
 
   def update_word_after_guess
