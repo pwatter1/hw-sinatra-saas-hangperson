@@ -18,7 +18,7 @@ class HangpersonGame
     @guesses = ''
     @wrong_guesses = ''
     @guess_number = 0
-    update_word_after_guess
+    update_word_after_guess()
   end
 
   # validate and add to guess list
